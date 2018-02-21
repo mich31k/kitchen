@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Configurator</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/nQuery/nQuery.js"></script>
+    <script type="text/javascript" src="js/math/math.js"></script>
+</head>
+<body>
+
+
+    <div class="configurator-setup">
+        Length: <input type="number" id="length" value="500">
+        Width: <input type="number" id="width" value="500">
+        <!--Height: <input type="number" id="height" value="500">-->
+        <button onclick="create_floor()">Create Floor</button>
+    </div>
+
+    <br />
+    <p id="message" style="display: none;"></p>
+    <br />
+
+
+
+    <div class="configurator-container row col-sm-12">
+        <div class="col-sm-7 text-center">
+            <canvas id="floor" width="500" height="500" style="outline: 1px solid magenta;"></canvas>
+        </div>
+        <div id="toolbox" class="col-sm-5 text-center row" style="outline: 1px solid magenta; padding: 10px;">
+            
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="js/creator/shapes.js"></script>
+    <script type="text/javascript" src="js/creator/events.js"></script>
+    <script type="text/javascript" src="js/creator/data-handler.js"></script>
+    <script type="text/javascript" src="js/creator/creator.js"></script>
+
+</body>
+</html>
